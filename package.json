@@ -1,0 +1,19 @@
+{
+    "name": "lambda-js",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "directories": {
+      "test": "test"
+    },
+    "scripts": {
+      "test": "mocha tests/unit",
+      "start": "lambda-local -l src/lambda/app.js -e tests/sample-input.json"
+    },
+    "license": "MIT",
+    "dependencies": {
+      "chai": "^4.3.4",
+      "lambda-local": "^2.0.0",
+      "mocha": "^9.1.1"
+    }
+  }

@@ -14,5 +14,5 @@
         "moduleResolution":"node",
         "isolatedModules": true,     
     },
-    "exclude": ["tests", "**/*.test.ts"]
+    "exclude": ["src/tests", "**/*.test.ts"]
 }

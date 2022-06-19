@@ -2,25 +2,20 @@
     "name": "lambda-js",
     "version": "1.0.0",
     "description": "",
-    "main": "index.js",
-    "directories": {
-        "test": "test"
-    },
     "scripts": {
-        "test": "mocha tests/unit",
-        "start": "lambda-local -l build/lambda/app.js -e tests/sample-input.json - h lambdaHandler",
+        "test": "jest",
+        "start": "lambda-local -l build/lambda/app.js -e tests/sample-input.json -h lambdaHandler",
         "build": "tsc"
     },
     "license": "MIT",
     "dependencies": {
-        "chai": "^4.3.4",
-        "lambda-local": "^2.0.0",
-        "mocha": "^9.1.1"
+        "@types/aws-lambda": "^8.10.100",
+        "@types/node": "^18.0.0"
     },
     "devDependencies": {
-        "@types/node": "^18.0.0",
-        "@types/aws-lambda": "^8.10.100",
-        "install": "^0.13.0",
-        "npm": "^8.12.2"
+        "@types/jest": "^28.1.2",
+        "jest": "^28.1.1",
+        "lambda-local": "^2.0.0",
+        "ts-jest": "^28.0.5"
     }
 }

@@ -10,6 +10,5 @@ export class NFRData {
     constructor() {
         var data=readFileSync('./src/data/nfrs.json', 'utf8');
         this.nfrList = JSON.parse(data) as NFR[];
-        console.log(this.nfrList);
     }
 }

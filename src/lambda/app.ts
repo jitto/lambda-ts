@@ -1,5 +1,5 @@
 import { Context, APIGatewayProxyResult, APIGatewayEvent } from 'aws-lambda';
-import { NFRService } from '../services/nfrService';
+import NFRService from '../services/nfrService';
 
 const nfrService = new NFRService();
 

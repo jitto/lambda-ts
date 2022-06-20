@@ -1,12 +1,12 @@
-import { NFRData } from "../data/nfrData";
+import NFRData from "../data/nfrData";
 
-export class NFRService {
-      public nfrData: NFRData;
+export default class NFRService {
+      private nfrData: NFRData;
       constructor() { 
             this.nfrData = new NFRData();
       }
 
       async GetNFR(nfrID: String) {
-            return this.nfrData.nfrList[0];
+            return this.nfrData.FindByID("123");
       }
 }

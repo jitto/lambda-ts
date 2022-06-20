@@ -1,4 +1,4 @@
-import { NFRService } from '../../../services/nfrService';
+import NFRService from '../../../services/nfrService';
 
 describe('Test GetNFR', function () {
     it('verifies successful response', async () => {
